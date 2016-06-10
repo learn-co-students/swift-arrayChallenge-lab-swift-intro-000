@@ -5,6 +5,8 @@
 
 > Toto, I've got a feeling we're not in Kansas anymore. ~[Dorothy Gale](https://en.wikipedia.org/wiki/Dorothy_Gale)
 
+<a href="https://en.wikipedia.org/wiki/Dorothy_Gale" target="_blank">Dorothy Gale</a>
+
 ## Learning Objectives - The student should be able to..
 
 * 
