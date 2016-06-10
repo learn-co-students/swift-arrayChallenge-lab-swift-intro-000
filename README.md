@@ -7,6 +7,9 @@
 
 <a href="https://en.wikipedia.org/wiki/Dorothy_Gale" target="_blank">Dorothy Gale</a>
 
+
+[Test](https://en.wikipedia.org/wiki/Dorothy_Gale){:target="_blank"}
+
 ## Learning Objectives - The student should be able to..
 
 * 
