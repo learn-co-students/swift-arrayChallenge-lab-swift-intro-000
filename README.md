@@ -38,4 +38,6 @@
 * [Array Practice - OBJ-C](https://github.com/learn-co-curriculum/objc-array-practice)
 * [Boat - SWIFT](https://github.com/learn-co-curriculum/swift-boat) <-- This is not a lab about arrays, but it is a lab written in Swift where you can reference how the the tests were written using Quick & Nimble.
 
+* I've included the Xcode project which includes the Quick & Nimble frameworks installed using CocoaPods. You should work within the .xcworkspace file, NOT the project file.
+
 <a href='https://learn.co/lessons/ArrayLab' data-visibility='hidden'>View this lesson on Learn.co</a>
