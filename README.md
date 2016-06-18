@@ -41,4 +41,12 @@
 
 --------------------------------------------------------------------------------
 
+You need to make a shopping list and unfortunately it looks like your adorable cat, Ginger, has torn the list in two and you need to reassemble it.
+
+
+1. Create a list of strings called `shoppingList`, this will be the assembled list later.
+2. Create a list of items needed called `itemsNeeded`, that contains the values "Bananas", "Apples", "Eggs", "Rolls".
+3. Create a list of the quantities needed called `itemQuantities`, that contains the values 6, 4, 12, 4.
+4. Create a function called `makeShoppingList` that takes the two lists, matches the values of the current positions in the array with each other and returns an assembled shopping list back to the `shoppingList` array.
+
 [View this lesson on Learn.co](https://learn.co/lessons/ArrayLab)
