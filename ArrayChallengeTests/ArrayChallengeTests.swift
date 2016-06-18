@@ -6,31 +6,31 @@
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
-import XCTest
+import Quick
+import Nimble
 @testable import ArrayChallenge
 
-class ArrayChallengeTests: XCTestCase {
+class ArrayChallengeTests: QuickSpec {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measureBlock {
-            // Put the code you want to measure the time of here.
+    override func spec() {
+        var viewController: ViewController!
+        beforeEach {
+            viewController = ViewController()
+        }
+        
+        describe(".viewDidLoad()") {
+            beforeEach {
+                let _ =  viewController.view
+            }
+            
+            let itemsNeeded: [String] = ["Bananas", "Apples", "Eggs", "Rolls"]
+            let itemQuantities: [Int] = [6, 4, 12, 4]
+            let finalList: [String] = ["6 Bananas", "4 Apples", "12 Eggs", "4 Rolls"]
+            
+            it("checks shopping list returns combined values") {
+                var shoppingList: [String] = viewController.makeShoppingList(itemQuantities, itemsNeeded: itemsNeeded)
+                expect(shoppingList).to(equal(finalList))
+            }
         }
     }
-    
 }
