@@ -9,27 +9,35 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var shoppingList: [String] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        var shoppingList: [String] = []
         let itemsNeeded: [String] = ["Bananas", "Apples", "Eggs", "Rolls"]
         let itemQuantities: [Int] = [6, 4, 12, 4]
-
-        shoppingList = makeShoppingList(itemQuantities, itemsNeeded: itemsNeeded)
-        print(shoppingList)
-    }
-
-    func makeShoppingList(itemQuantities: [Int], itemsNeeded: [String]) -> [String] {
-        var shoppingList: [String] = []
         
-        for (index, shoppingItem) in itemsNeeded.enumerate() {
-            shoppingList.append("\(itemQuantities[index]) \(shoppingItem)")
-        }
-        
-        return shoppingList
+        shoppingList = makeShoppingList(itemsNeeded, quantityOfItems: itemQuantities)
     }
     
+    
+    func makeShoppingList(items: [String], quantityOfItems: [Int]) -> [String] {
+        
+        var finalList: [String] = []
+        
+        for (index, item) in items.enumerate() {
+            
+            let quantityOfItem = quantityOfItems[index]
+            
+            let listedItem = "\(quantityOfItem) \(item)"
+            
+            finalList.append(listedItem)
+            
+        }
+        
+        return finalList
+        
+    }
     
 }
