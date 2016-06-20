@@ -33,10 +33,12 @@ On the other sheet of paper, we have:
 
 Your function should return back an array that produces a list that looks like this:
 
-* 1. 6 Bananas
-* 2. 4 Apples
-* 3. 12 Eggs
-* 4. 4 Rolls
+<ol start="1">
+  <li>6 Bananas</li>
+  <li>4 Apples</li>
+  <li>12 Eggs</li>
+  <li>4 Rolls</li>
+</ol>
 
 
 1. In the `viewDidLoad()` method in the ViewController.swift file, you should create two separate arrays that represent the torn sheets of paper. [6, 4, 12, 4] & ["Bananas", "Apples", Eggs", Rolls].
