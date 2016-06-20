@@ -18,7 +18,7 @@ class ArrayChallengeTests: QuickSpec {
         
         let itemsNeeded = ["Bananas", "Apples", "Eggs", "Rolls"]
         let itemQuantities = [6, 4, 12, 4]
-        let finalList = ["6 Bananas", "4 Apples", "12 Eggs", "4 Rolls"]
+        let finalList = ["1. 6 Bananas", "2. 4 Apples", "3. 12 Eggs", "4. 4 Rolls"]
         
         
         describe("makeShoppingList(_:quantityOfItems:)") {
@@ -29,9 +29,9 @@ class ArrayChallengeTests: QuickSpec {
                 
                 expect(list.count).to(equal(4))
                 
-                expect(list[0]).to(match("6 Bananas"))
+                expect(list[0]).to(match("1. 6 Bananas"))
                 
-                expect(list[3]).to(match("4 Rolls"))
+                expect(list[3]).to(match("4. 4 Rolls"))
                 
                 expect(list).to(equal(finalList))
                 
