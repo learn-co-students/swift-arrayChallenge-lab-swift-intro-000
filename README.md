@@ -1,43 +1,76 @@
-# Array Labs
+# Shopping Time
 
-![Dorothy](images/DorothyGale.png)
-
+![Dorothy](http://i.imgur.com/nqYVp1j.png?1)
 
 > Toto, I've got a feeling we're not in Kansas anymore. ~[Dorothy Gale](https://en.wikipedia.org/wiki/Dorothy_Gale)
 
+## Learning Objectives
 
-## Learning Objectives - The student should be able to..
+* Write a method that takes in two arguments and returns an Array.
+* Call on created method in `viewDidLoad()`.
+* Read and run unit tests to check your work.
 
-* Complete this lab which challenges them on what they have learned about arrays up to this point.
-* This should actually reflect what it is we're looking to cover here (similar to the outlines provided in the labs I mentioned in the outline below).
 
-## What the student can do at this point 
+## Instructions
 
-* Create variables and constants
-* Is familiar with type annotations, type inference and string interpolation.
-* Can create functions with return types.
-* Is familiar with the String, Int, Double, and Bool type.
-* Can perform arithmetic operations on Int and Double.
-* Understands if and else clause statements.
-* Can create and use Arrays.
-* Can iterate over an Array using a for-in loop.
-* Can iterate over an Array calling enumerate().
-* Work with the following methods on arrays:
-	* `append()`
-	* `insert(_:atIndex:)`
-	* `removeAtIndex()`
-	* *subscript syntax* with arrays
-	* `count`
-	* `isEmpty`
-	
-## Outline / Notes
+![CuteCat](https://media.giphy.com/media/GCylx7eCsdpoQ/giphy.gif)
 
-*  I'm including labs written for the iOS immersive course here that you can reference (or flat our steal) They were written in Objective-C which this course is not! They are labs that students seemed to like in the immersive program. They also serve as a good reference for what a **lab** actually should look like. You can see how we structure the lab with regards to the instructions as well as how the tests are written.
-* [WWDC Badges With Methods - OBJ-C](https://learn.co/tracks/ios-new/objective-c-basics/basic-structures/wwdc-badges-with-methods)
-* [Deli Counter Lab - OBJ-C](https://learn.co/tracks/ios-new/objective-c-basics/basic-structures/deli-counter)
-* [Array Practice - OBJ-C](https://github.com/learn-co-curriculum/objc-array-practice)
-* [Boat - SWIFT](https://github.com/learn-co-curriculum/swift-boat) <-- This is not a lab about arrays, but it is a lab written in Swift where you can reference how the the tests were written using Quick & Nimble.
+Our adorable cat, Ginger, has been somewhat of a brat lately. We **had** a nice shopping list all ready to go which included the items we needed at the store, along with the number of each item we needed to purchase. But, Ginger got to it. The list has been torn directly in half, with one piece of paper with just numbers on it (representing the number of each item needed) and one piece of paper with just the items on it.
 
-* I've included the Xcode project which includes the Quick & Nimble frameworks installed using CocoaPods. You should work within the .xcworkspace file, NOT the project file.
+It's your job (the programmer) to create a function which will take in two arguments. One of these arguments will be of type [`String`] which represents the various items. The other argument will be of type [`Int`] which represents the quantity of each item. Considering the list was split in half, they match up evenly. You need to return  back an array of type [`String`] which represents a complete shopping list.
 
-<a href='https://learn.co/lessons/ArrayLab' data-visibility='hidden'>View this lesson on Learn.co</a>
+On one sheet of paper, we have the following: 
+* 6
+* 4
+* 12
+* 4  
+  
+On the other sheet of paper, we have:
+* Bananas
+* Apples
+* Eggs
+* Rolls
+
+Your function should return back an array that produces a list that looks like this:
+
+<ol start="1">
+  <li>6 Bananas</li>
+  <li>4 Apples</li>
+  <li>12 Eggs</li>
+  <li>4 Rolls</li>
+</ol>
+
+
+1. In the `viewDidLoad()` method in the ViewController.swift file, you should create two separate arrays that represent the torn sheets of paper. [6, 4, 12, 4] & ["Bananas", "Apples", Eggs", Rolls].
+2. Create a function which will take in two arguments of type [`String`] and [`Int`] which returns an array of type [`String`]. This array should represent our completed shopping list shown above. In order for the tests to work, your methods signature should  be this: `makeShoppingList(_:quantityOfItems:)`.
+3. Call on this function in `viewDidLoad()` and assign the return value of this function to the `shoppingList` variable which has already been created for you (above the `viewDidLoad()` method.
+
+
+
+**Quick Note**. How do you read that method signature I included in instruction #2? The name of this function should be `makeShoppingList`, that underscore `_` means that the first argument to this function will have **NO** external name when it is called which happens by default. The second argument to this function will have an external name of `quantityOfItems` when it is called. 
+
+Here's an example.
+
+```swift
+func printFavoriteNames(names: [String], colors: [String], numbers: [Int]) {
+	// printing all my favorite names, colors and numbers
+}
+```
+
+We call on this function like so:
+
+```swift
+let names = ["Jim", "Bran", "Sansa"]
+let colors = ["Red", "Blue", "Green"]
+let numbers = [7, 742, 5]
+
+printFavoriteNames(names, colors: colors, numbers: numbers)
+```
+
+Notice how when calling the function, the first argument's external name is not there but colors: and numbers: is. So if we were to type out this method signature to someone, we would do so like this:
+
+`printFavoriteNames(_:colors:numbers:)`
+
+
+
+[View this lesson on Learn.co](https://learn.co/lessons/ArrayLab)
