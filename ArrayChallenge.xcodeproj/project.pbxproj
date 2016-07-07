@@ -608,7 +608,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3F804126299C77EDFCA20681 /* Pods-ArrayChallengeUITests.debug.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = ArrayChallengeUITests/Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -620,7 +620,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D233A0E01D6A1A267C13AF8C /* Pods-ArrayChallengeUITests.release.xcconfig */;
 			buildSettings = {
-				INFOPLIST_FILE = ArrayChallengeUITests/Info.plist;
+				INFOPLIST_FILE = "";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallengeUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
