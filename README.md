@@ -41,7 +41,7 @@ Your function should return back an array that produces a list that looks like t
 </ol>
 
 
-1. In the `viewDidLoad()` method in the ViewController.swift file, you should create two separate arrays that represent the torn sheets of paper. [6, 4, 12, 4] & ["Bananas", "Apples", Eggs", Rolls].
+1. In the `viewDidLoad()` method in the ViewController.swift file, you should create two separate arrays that represent the torn sheets of paper. [6, 4, 12, 4] & ["Bananas", "Apples", "Eggs", Rolls].
 2. Create a function which will take in two arguments of type [`String`] and [`Int`] which returns an array of type [`String`]. This array should represent our completed shopping list shown above. In order for the tests to work, your methods signature should  be this: `makeShoppingList(_:quantityOfItems:)`.
 3. Call on this function in `viewDidLoad()` and assign the return value of this function to the `shoppingList` variable which has already been created for you (above the `viewDidLoad()` method.
 
@@ -74,3 +74,5 @@ Notice how when calling the function, the first argument's external name is not 
 
 
 [View this lesson on Learn.co](https://learn.co/lessons/ArrayLab)
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/swift-arrayChallenge-lab'>Array Challenge Lab</a> on Learn.co and start learning to code for free.</p>
