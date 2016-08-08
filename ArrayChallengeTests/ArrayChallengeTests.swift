@@ -20,12 +20,11 @@ class ArrayChallengeTests: QuickSpec {
         let itemQuantities = [6, 4, 12, 4]
         let finalList = ["1. 6 Bananas", "2. 4 Apples", "3. 12 Eggs", "4. 4 Rolls"]
         
-        
-        describe("makeShoppingList(_:quantityOfItems:)") {
+        describe("makeShoppingListWithItems(_:quantityOfItems:)") {
             
             it("Returns a shopping list which includes the quantity of each item") {
                 
-                let list = testVC.makeShoppingList(itemsNeeded, quantityOfItems: itemQuantities)
+                let list = testVC.makeShoppingListWithItems(itemsNeeded, quantityOfItems: itemQuantities)
                 
                 expect(list.count).to(equal(4))
                 
@@ -41,7 +40,7 @@ class ArrayChallengeTests: QuickSpec {
         
         describe("viewDidLoad()") {
             
-            it("Should call makeShoppingList(_:quantityOfItems:) and assign the return value to the shoppingList variable on the ViewController") {
+            it("Should call makeShoppingListWithItems(_:quantityOfItems:) and assign the return value to the shoppingList variable on the ViewController") {
                 
                 testVC.viewDidLoad()
                 

@@ -15,18 +15,10 @@
 		5B9D1C861D0B31E500522058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1C851D0B31E500522058 /* Assets.xcassets */; };
 		5B9D1C891D0B31E500522058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1C871D0B31E500522058 /* LaunchScreen.storyboard */; };
 		5B9D1C941D0B31E500522058 /* ArrayChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B9D1C931D0B31E500522058 /* ArrayChallengeTests.swift */; };
-		74A8AEA17F312836DB84E07D /* Pods_ArrayChallengeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 806725220263A7B83966D489 /* Pods_ArrayChallengeUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		5B9D1C901D0B31E500522058 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B9D1C731D0B31E500522058 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B9D1C7A1D0B31E500522058;
-			remoteInfo = ArrayChallenge;
-		};
-		5B9D1C9B1D0B31E500522058 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5B9D1C731D0B31E500522058 /* Project object */;
 			proxyType = 1;
@@ -48,7 +40,6 @@
 		5B9D1C8F1D0B31E500522058 /* ArrayChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrayChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9D1C931D0B31E500522058 /* ArrayChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayChallengeTests.swift; sourceTree = "<group>"; };
 		5B9D1C951D0B31E500522058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B9D1C9A1D0B31E500522058 /* ArrayChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrayChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F4EDAF86595D4AEA97616C4 /* Pods_ArrayChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArrayChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		806725220263A7B83966D489 /* Pods_ArrayChallengeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArrayChallengeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDC6F99BC7232447C6C61759 /* Pods_ArrayChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ArrayChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,14 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B9D1C971D0B31E500522058 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				74A8AEA17F312836DB84E07D /* Pods_ArrayChallengeUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -102,7 +85,6 @@
 			children = (
 				5B9D1C7B1D0B31E500522058 /* ArrayChallenge.app */,
 				5B9D1C8F1D0B31E500522058 /* ArrayChallengeTests.xctest */,
-				5B9D1C9A1D0B31E500522058 /* ArrayChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -196,26 +178,6 @@
 			productReference = 5B9D1C8F1D0B31E500522058 /* ArrayChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5B9D1C991D0B31E500522058 /* ArrayChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B9D1CA91D0B31E500522058 /* Build configuration list for PBXNativeTarget "ArrayChallengeUITests" */;
-			buildPhases = (
-				3BBFA7439E049989F4DF67EC /* [CP] Check Pods Manifest.lock */,
-				5B9D1C961D0B31E500522058 /* Sources */,
-				5B9D1C971D0B31E500522058 /* Frameworks */,
-				5B9D1C981D0B31E500522058 /* Resources */,
-				4B7FD0A11822841768EDC747 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B9D1C9C1D0B31E500522058 /* PBXTargetDependency */,
-			);
-			name = ArrayChallengeUITests;
-			productName = ArrayChallengeUITests;
-			productReference = 5B9D1C9A1D0B31E500522058 /* ArrayChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -230,10 +192,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					5B9D1C8E1D0B31E500522058 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = 5B9D1C7A1D0B31E500522058;
-					};
-					5B9D1C991D0B31E500522058 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = 5B9D1C7A1D0B31E500522058;
 					};
@@ -254,7 +212,6 @@
 			targets = (
 				5B9D1C7A1D0B31E500522058 /* ArrayChallenge */,
 				5B9D1C8E1D0B31E500522058 /* ArrayChallengeTests */,
-				5B9D1C991D0B31E500522058 /* ArrayChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,13 +234,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B9D1C981D0B31E500522058 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -300,36 +250,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArrayChallenge/Pods-ArrayChallenge-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3BBFA7439E049989F4DF67EC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4B7FD0A11822841768EDC747 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ArrayChallengeUITests/Pods-ArrayChallengeUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		4BDFC8E9280F2A4404E97B46 /* [CP] Check Pods Manifest.lock */ = {
@@ -427,13 +347,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5B9D1C961D0B31E500522058 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -441,11 +354,6 @@
 			isa = PBXTargetDependency;
 			target = 5B9D1C7A1D0B31E500522058 /* ArrayChallenge */;
 			targetProxy = 5B9D1C901D0B31E500522058 /* PBXContainerItemProxy */;
-		};
-		5B9D1C9C1D0B31E500522058 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B9D1C7A1D0B31E500522058 /* ArrayChallenge */;
-			targetProxy = 5B9D1C9B1D0B31E500522058 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -604,30 +512,6 @@
 			};
 			name = Release;
 		};
-		5B9D1CAA1D0B31E500522058 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3F804126299C77EDFCA20681 /* Pods-ArrayChallengeUITests.debug.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ArrayChallenge;
-			};
-			name = Debug;
-		};
-		5B9D1CAB1D0B31E500522058 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D233A0E01D6A1A267C13AF8C /* Pods-ArrayChallengeUITests.release.xcconfig */;
-			buildSettings = {
-				INFOPLIST_FILE = "";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = ArrayChallenge;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -654,15 +538,6 @@
 			buildConfigurations = (
 				5B9D1CA71D0B31E500522058 /* Debug */,
 				5B9D1CA81D0B31E500522058 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B9D1CA91D0B31E500522058 /* Build configuration list for PBXNativeTarget "ArrayChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B9D1CAA1D0B31E500522058 /* Debug */,
-				5B9D1CAB1D0B31E500522058 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
