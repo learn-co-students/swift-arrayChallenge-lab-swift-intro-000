@@ -27,33 +27,15 @@ class ViewController: UIViewController {
         
         thisIsAnExample()
         
-        shoppingList = makeShoppingListWithItems(nameOfItems, quantityOfItems: quantityOfItems)
-        
     }
-    
-    // Implement your method here
-    
-    func makeShoppingListWithItems(items: [String], quantityOfItems: [Int]) -> [String] {
-        var finalList: [String] = []
-        
-        for (index, item) in items.enumerate() {
-            
-            let quantityOfItem = quantityOfItems[index]
-            let numberedItem = index + 1
-            let sentence = "\(numberedItem). \(quantityOfItem) \(item)"
-            
-            finalList.append(sentence)
-            
-        }
-        
-        return finalList
-        
-    }
-    
     
     // This is just an example - you can remove this.
     func thisIsAnExample() {
         print("This ist just an example, you can remvove this.")
     }
+    
+    
+    // Implement your method here
+
     
 }
