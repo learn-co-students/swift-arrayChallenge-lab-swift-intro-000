@@ -5,7 +5,9 @@
 > Toto, I've got a feeling we're not in Kansas anymore. -[Dorothy Gale](https://en.wikipedia.org/wiki/Dorothy_Gale)
 
 
+## Overview
 
+In this lab, you'll write a function that takes in two arguments and returns an array. 
 
 ## Instructions
 
