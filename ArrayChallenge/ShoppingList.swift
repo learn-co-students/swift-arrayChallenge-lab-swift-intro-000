@@ -6,16 +6,19 @@
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
-
+//
 class ShoppingList {
     
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
-       
+        var shoppingList: [String] = []
         // Implement this function
+        for (value, item) in items.enumerated() {
+            shoppingList.append("\(value + 1). \(item)(\(amounts[value]))")
+        }
         
-        
+        return shoppingList
         
     }
     
