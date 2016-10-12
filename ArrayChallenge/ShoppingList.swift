@@ -77,4 +77,38 @@ The array returned from this function needs to look like this:
  }
  // this works without using enumerated()
  
+ ==============================
+ var iceCreamFlavors = ["Vanilla", "Chocolate", "Strawberry"]
+ var iceCreamLeft = ["20", "5", "50"]
+ var counter = 0
+ var newArray: [String] = []
+ 
+ 
+ func createShoppingList(withItems: [String]) ->  [String] {
+ for flavor in iceCreamFlavors {
+ counter += 1
+ newArray.append(flavor)
+ print("\(flavor) Hello")
+ print("Counter is now at \(counter)")
+ print(newArray)
+ }
+ 
+ for quantity in iceCreamLeft {
+ //        counter += 1
+ newArray.append(quantity)
+ printw1("\(quantity) Hello")
+ print("Counter is now at \(quantity)")
+ 
+ 
+ print("This is the complete array: \(newArray)")
+ return newArray
+ }
+ 
+ createShoppingList(withItems: iceCreamFlavors)
+ 
+ // use counter to match the index to append for the second for loop for the numbers
+ // have a for loop run for the completed array with enumerated. This would require 3 for loops
+ // Look into enumerated() taking in two parameters to have two arrays filling in the parameters. This one might be the best way to do this clean. Refactor to this if the above worked.
+
+ ==============================
 */
