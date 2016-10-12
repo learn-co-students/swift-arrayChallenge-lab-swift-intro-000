@@ -29,6 +29,8 @@ class ShoppingList {
 
 } // end of class
 
+// On the first for loop, use enumerated, keep a counter and then for the second for loop use that counter to match the index and append it if it matches.
+
 /*
 To call this function
 createShoppingList(withItems: AllTheItems, amountOfEachItem: amountOfItems)
@@ -64,5 +66,15 @@ The array returned from this function needs to look like this:
  
  // this prints ["Bananas", "Apples", "Eggs", "Rolls", "6", "4", "12", "4"]
  // enumerated() would fix this, but now need to sort them via index, or concat somehow.
+ 
+ ==============================================
+ 
+ var iceCreamFlavors = ["Vanilla", "Chocolate", "Strawberry"]
+ var iceCreamLeft = ["20", "5", "50"]
+ 
+ for index in 0..<iceCreamFlavors.count {
+ print("\(iceCreamLeft[index])::\(iceCreamFlavors[index])")
+ }
+ // this works without using enumerated()
  
 */
