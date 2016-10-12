@@ -14,9 +14,14 @@ class ShoppingList {
         
        
         // Implement this function
-        
-        
-        
+        var shoppingList = [String]()
+        //print (items)
+        //print(amounts)
+        for (idx,item) in items.enumerated() {
+            shoppingList.append("\(idx+1). \(item)(\(amounts[idx]))")
+        }
+        return shoppingList
     }
     
 }
+
