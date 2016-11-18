@@ -8,15 +8,25 @@
 
 
 class ShoppingList {
+
+    var items = ["Bananas", "Apples", "Eggs", "Rolls"]
+    var amounts = ["6", "4", "12", "4"]
+    var completeList: [String] = []
+
+    func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String]
+    {
     
-    
-    func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
-        
-       
-        // Implement this function
-        
-        
-        
+        for (index, food) in items.enumerated() {
+   
+              completeList.append("\(index + 1). \(food)(\(amounts[index]))")
+            
+        }
+
+      return completeList
+
     }
-    
+   
+
+
+
 }
