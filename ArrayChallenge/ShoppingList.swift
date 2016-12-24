@@ -15,8 +15,13 @@ class ShoppingList {
        
         // Implement this function
         
+        for (index, value) in ShoppingList.enumerated() {
+            print("Item \(index + 1): \(value)")
+            
         
-        
-    }
-    
+        }
+ 
+
 }
+
+
