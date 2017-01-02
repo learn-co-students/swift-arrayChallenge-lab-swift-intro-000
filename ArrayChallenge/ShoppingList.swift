@@ -14,8 +14,17 @@ class ShoppingList {
         
        
         // Implement this function
+        var ret : [String] = []
         
+        if (items.count != amounts.count) {
+            return ret;
+        }
         
+        for (index, _) in items.enumerated() {
+            ret.append("\(index + 1). \(items[index])(\(amounts[index]))");
+        }
+        
+        return ret;
         
     }
     
