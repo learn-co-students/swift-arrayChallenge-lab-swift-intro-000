@@ -13,9 +13,16 @@ class ShoppingList {
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
        
-        // Implement this function
+       // Implement this function
+        var sumOfArrays: [String] = []
+        for (index, item) in items.enumerated() {
+             let amount = amounts[index]
+                sumOfArrays.append("\(index + 1). \(item)(\(amount))")
+                print(sumOfArrays)
         
+        }
         
+            return sumOfArrays
         
     }
     
