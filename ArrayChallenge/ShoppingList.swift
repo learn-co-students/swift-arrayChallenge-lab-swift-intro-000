@@ -14,9 +14,14 @@ class ShoppingList {
         
        
         // Implement this function
+        var shoppingList: [String] = []
         
-        
-        
+        if items.count == amounts.count {
+            for (i, item) in items.enumerated() {
+                shoppingList.append("\(i+1). \(item)(\(amounts[i]))")
+            }
+        }
+        return shoppingList
     }
     
 }
