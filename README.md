@@ -9,7 +9,7 @@
 
 ![CuteCat](https://media.giphy.com/media/92TbzZxFOSfny/giphy.gif)
 
-Our adorable cat, Ginger, has been somewhat of a brat lately. We **had** a nice shopping list all ready to go which included the items and their quantity we needed at the store. But, Ginger got to it. The list has been torn directly in half, with one piece of paper with just numbers on it (representing the quantity of each item needed) and one piece of paper with just the names of the items on it.
+Our adorable cat, Ginger, has been somewhat of a brat lately. We **had** a nice shopping list all ready to go which included the items and their quantity we needed at the store. But.. Ginger got to it. The list has been torn directly in half, with one piece of paper with just numbers on it (representing the quantity of each item needed) and one piece of paper with just the names of the items on it.
 
 It's your job (the programmer) to create a function which will take in two arguments. One of these arguments will be of type [`String`] which represents the names of the items. The other argument will be of type [`String`] which represents the amount of each item. Considering the list was split in half, they match up evenly. This function should return  back an array of type [`String`] which represents a complete shopping list.
 
@@ -89,6 +89,8 @@ In your implementation, you should create a new array (and return it) that looks
 HINT: The `enumerated()` function available to arrays should help you out here.
 
 This lab contains tests, hit command + u to make sure you've correctly implemented the method by passing the tests.
+
+Note that we won't provide to the solution to every lab. For this lab, you can find a link to the solution [here](https://github.com/learn-co-curriculum/swift-arrayChallenge-lab/blob/solution/ArrayChallenge/ShoppingList.swift).
 
 [View this lesson on Learn.co](https://learn.co/lessons/ArrayLab)
 
