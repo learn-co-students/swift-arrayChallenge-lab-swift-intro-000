@@ -15,7 +15,13 @@ class ShoppingList {
        
         // Implement this function
         
+        var arr: [String] = []
         
+        for (x, y) in items.enumerated(){
+            arr.append("\(x+1). \(y)(\(amounts[x]))")
+            
+        }
+        return arr
         
     }
     
