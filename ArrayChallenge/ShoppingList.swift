@@ -10,13 +10,18 @@
 class ShoppingList {
     
     
+    
+    
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
        
         // Implement this function
+        var items = ["Bananas", "Apples", "Eggs", "Rolls"]
+        var amounts = ["6", "4", "12", "4"]
         
+        var newArray: [String] = []
         
-        
+     return newArray
     }
     
 }
