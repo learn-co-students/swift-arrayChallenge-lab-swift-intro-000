@@ -14,6 +14,9 @@
 		5B9D1C891D0B31E500522058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1C871D0B31E500522058 /* LaunchScreen.storyboard */; };
 		7D19FAEA1D8D6CA7003F74FE /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19FAE91D8D6CA7003F74FE /* ShoppingList.swift */; };
 		7D19FAF31D8D78BD003F74FE /* ShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19FAF21D8D78BD003F74FE /* ShoppingListTests.swift */; };
+		DDFEE62B1E841AF300DD0939 /* ArrayChallenge.app in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1C7B1D0B31E500522058 /* ArrayChallenge.app */; };
+		DDFEE62C1E841AF400DD0939 /* ArrayChallenge.app in Resources */ = {isa = PBXBuildFile; fileRef = 5B9D1C7B1D0B31E500522058 /* ArrayChallenge.app */; };
+		DDFEE62D1E841B3100DD0939 /* ShoppingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D19FAE91D8D6CA7003F74FE /* ShoppingList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,7 +163,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Flatiron School";
 				TargetAttributes = {
 					5B9D1C7A1D0B31E500522058 = {
@@ -201,6 +204,7 @@
 				5B9D1C891D0B31E500522058 /* LaunchScreen.storyboard in Resources */,
 				5B9D1C861D0B31E500522058 /* Assets.xcassets in Resources */,
 				5B9D1C841D0B31E500522058 /* Main.storyboard in Resources */,
+				DDFEE62B1E841AF300DD0939 /* ArrayChallenge.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +212,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDFEE62C1E841AF400DD0939 /* ArrayChallenge.app in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D19FAF31D8D78BD003F74FE /* ShoppingListTests.swift in Sources */,
+				DDFEE62D1E841B3100DD0939 /* ShoppingList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +282,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -321,8 +329,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -341,6 +351,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
