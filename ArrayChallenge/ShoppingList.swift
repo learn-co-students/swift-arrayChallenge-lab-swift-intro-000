@@ -12,11 +12,23 @@ class ShoppingList {
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
-       
-        // Implement this function
+        var ary: [String] = []
         
+        for item in items {
+            ary.append(item)
+        }
         
+        for (a, b) in amounts.enumerated() {
+            ary[a] = "\(ary[a])(\(b))"
+        }
         
+        for (x, y) in ary.enumerated() {
+            ary[x] = "\(x+1). \(y)"
+        }
+        
+        return ary
     }
     
 }
+
+
