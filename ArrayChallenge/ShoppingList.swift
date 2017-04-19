@@ -14,8 +14,17 @@ class ShoppingList {
         
        
         // Implement this function
+        var return_array: [String] = []
+        for (i, item) in items.enumerated(){
+            var qty = ""
+            if amounts[i] != ""{
+                qty = amounts[i]
+            }
+            
+            return_array.append("\(i + 1). \(item)(\(qty))")
+        }
         
-        
+        return return_array
         
     }
     
