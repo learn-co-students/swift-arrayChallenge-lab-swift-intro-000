@@ -13,10 +13,16 @@ class ShoppingList {
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
        
-        // Implement this function
+        var shoppingList: [String] = []
         
+        for (index, step) in items.enumerated() {
+            
+            let amount = amounts[index]
+            let list = "\(index + 1). \(step)(\(amount))"
+            shoppingList.append(list)
+        }
         
-        
+        return shoppingList
     }
     
 }
