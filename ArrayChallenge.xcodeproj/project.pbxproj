@@ -36,7 +36,7 @@
 		5B9D1C8A1D0B31E500522058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B9D1C8F1D0B31E500522058 /* ArrayChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArrayChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B9D1C951D0B31E500522058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D19FAE91D8D6CA7003F74FE /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; };
+		7D19FAE91D8D6CA7003F74FE /* ShoppingList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingList.swift; sourceTree = "<group>"; usesTabs = 1; };
 		7D19FAF21D8D78BD003F74FE /* ShoppingListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShoppingListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
