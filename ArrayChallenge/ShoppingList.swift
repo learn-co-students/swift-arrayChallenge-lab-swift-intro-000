@@ -15,8 +15,15 @@ class ShoppingList {
        
         // Implement this function
         
+        var comboList: [String] = []
         
-        
+        for (index, element) in items.enumerated() {
+            let amount = amounts[index]
+            let item = "\(index + 1). \(element)(\(amount))"
+            comboList.append(item)
+        }
+        return comboList
     }
+    
     
 }
