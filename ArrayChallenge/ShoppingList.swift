@@ -11,12 +11,13 @@ class ShoppingList {
     
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
-        
-       
-        // Implement this function
-        
-        
-        
+        var newArray: [String] = []
+        var counter = 0
+        for item in items {
+            let newItem = "\(counter + 1). \(item)(\(amounts[counter]))"
+            newArray.append(newItem)
+            counter += 1
+        }
+        return newArray
     }
-    
 }
