@@ -11,12 +11,18 @@ class ShoppingList {
     
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
+     
+        var shoppingList: [String] = []
         
-       
-        // Implement this function
-        
-        
-        
+        for (index, item) in items.enumerated() {
+            let amount = amounts[index]
+            let listItem = "\(index + 1). \(item)(\(amount))"
+            shoppingList.append(listItem)
+        }
+        return shoppingList
     }
     
 }
+
+var food = ["Bananas", "Apples", "Eggs", "Rolls"]
+var number = ["6", "4", "12", "4"]
