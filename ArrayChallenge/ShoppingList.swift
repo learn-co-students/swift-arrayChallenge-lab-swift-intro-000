@@ -14,7 +14,16 @@ class ShoppingList {
         
        
         // Implement this function
+        //Create new array which will contain complete shopping list
+        var shoppinglist: [String] = []
         
+        for (itemNumber, item) in items.enumerated() {
+            
+            shoppinglist.append("\(itemNumber + 1). \(item)(\(amounts[itemNumber]))")
+            
+        }
+        
+        return shoppinglist
         
         
     }
