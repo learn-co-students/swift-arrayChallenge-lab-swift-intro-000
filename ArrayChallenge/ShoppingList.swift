@@ -14,6 +14,15 @@ class ShoppingList {
         
        
         // Implement this function
+        var n = 0
+        var result : [String] = []
+        
+        while n < items.count {
+            result.append("\(n+1). \(items[n])(\(amounts[n]))")
+            n += 1
+        }
+        
+        return result
         
         
         
