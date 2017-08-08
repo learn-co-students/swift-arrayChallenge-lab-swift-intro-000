@@ -9,14 +9,18 @@
 
 class ShoppingList {
     
-    
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
        
         // Implement this function
         
+        var newArray: [String] = []
+        for (index, amount) in amounts.enumerated() {
+            print("\(index + 1). \(items[index])(\(amount))")
+            newArray.append("\(index + 1). \(items[index])(\(amount))")
+        }
         
-        
+        return newArray
     }
     
 }
