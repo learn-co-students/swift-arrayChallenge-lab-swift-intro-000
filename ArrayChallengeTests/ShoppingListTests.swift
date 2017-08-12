@@ -27,7 +27,7 @@ class ShoppingListTests: XCTestCase {
         let completeList = ["1. Bananas(6)", "2. Apples(4)", "3. Eggs(12)", "4. Rolls(4)"]
         
         let generatedList = shoppingList.createShoppingList(withItems: items, amountOfEachItem: amounts)
-
+      
         XCTAssertEqual(generatedList, completeList, "Your function implementation isn't creating the shopping list in the correct format.")
     }
     
@@ -37,7 +37,7 @@ class ShoppingListTests: XCTestCase {
         let completeList = ["1. Hard Boiled Eggs(99)", "2. Bread(99)", "3. Milk(99)"]
         
         let generatedList = shoppingList.createShoppingList(withItems: items, amountOfEachItem: amounts)
-        
+      
         XCTAssertEqual(generatedList, completeList, "Your function implementation isn't creating the shopping list in the correct format.")
     }
     
