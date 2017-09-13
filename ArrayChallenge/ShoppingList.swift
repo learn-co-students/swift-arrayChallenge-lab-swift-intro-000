@@ -14,9 +14,16 @@ class ShoppingList {
         
        
         // Implement this function
+        //var fruites = ["banana","pearl","grapes","orange"]
+        //var quntity = ["2","4","33","6"]
+        var list =  [String]()
         
+        for (index,qty) in items.enumerated(){
+            let string = "\(index+1). \(items[index])(\(amounts[index]))"
+            list.append(string)
+        }
         
-        
+        return list
     }
     
 }
