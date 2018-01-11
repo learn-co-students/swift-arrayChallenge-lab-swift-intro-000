@@ -6,17 +6,10 @@
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
-
 class ShoppingList {
     
     
-    func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
-        
-       
-        // Implement this function
-        
-        
-        
-    }
-    
+
+
+
 }
