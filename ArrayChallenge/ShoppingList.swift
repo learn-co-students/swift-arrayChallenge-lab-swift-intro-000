@@ -9,14 +9,22 @@
 
 class ShoppingList {
     
+    let items = ["Bananas", "Apples", "Eggs", "Rolls"]
+    let amounts = ["6", "4", "12", "4"]
+    var finalList:[String] = []
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
         
-       
-        // Implement this function
+        for (index,item) in items.enumerated() {
+            
+            let mergedItemString = "\(index+1). " + item + "(\(amounts[index]))"
+            print(mergedItemString)
+            finalList.append(mergedItemString)
+            
+        }
         
         
-        
+        return finalList
     }
     
 }
