@@ -1,16 +1,14 @@
-//
-//  ShoppingList.swift
-//  ArrayChallenge
-//
-//  Created by Jim Campagno on 9/17/16.
-//  Copyright © 2016 Flatiron School. All rights reserved.
-//
+//class ShoppingList {
 
-
-class ShoppingList {
+    let allTheItems = ["Bananas", "Apples", "Pears"]
+    let amountOfItems = ["6", "4", "3"]
     
+    func load() {
+        createShoppingList(withItems: allTheItems, amountOfEachItem: amountOfItems)
+    }
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
+        
         var shoppingList = [String]()
         var i = 0
         for _ in items {
@@ -20,6 +18,8 @@ class ShoppingList {
         }
         
         return(shoppingList)
-        
     }
-}
+
+    load()
+
+//}
