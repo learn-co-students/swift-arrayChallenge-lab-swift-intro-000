@@ -11,12 +11,15 @@ class ShoppingList {
     
     
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
+        var shoppingList = [String]()
+        var i = 0
+        for _ in items {
+            shoppingList += ["\(i + 1). \(items[i])(\(amounts[i]))"]
+            print(shoppingList[i])
+            i += 1
+        }
         
-       
-        // Implement this function
-        
-        
+        return(shoppingList)
         
     }
-    
 }
