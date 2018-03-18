@@ -9,14 +9,16 @@
 
 class ShoppingList {
     
-    
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
+        var newShoppingList: [String] = []
         
-       
-        // Implement this function
-        
-        
-        
+        if items.count == amounts.count {
+            for (index, item) in items.enumerated() {
+                 newShoppingList.append("\(index + 1). \(item)(\(amounts[index]))")
+            }
+        } else {
+            print("There is a mismatch between the number of items and quantities!")
+        }
+        return newShoppingList
     }
-    
 }
