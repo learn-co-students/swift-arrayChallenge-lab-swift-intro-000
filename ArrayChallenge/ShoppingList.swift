@@ -14,9 +14,14 @@ class ShoppingList {
         
        
         // Implement this function
+        var combineArray: [String] = []
         
+        for (index, countOfItem) in amounts.enumerated() {
+            combineArray.append("\(index+1). \(items[index])(\(countOfItem))")
+            
+        }
         
-        
+        return combineArray
     }
     
 }
