@@ -12,7 +12,6 @@ import XCTest
 class ShoppingListTests: XCTestCase {
     
     let shoppingList = ShoppingList()
-
     override func setUp() {
         super.setUp()
     }
