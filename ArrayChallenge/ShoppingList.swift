@@ -14,9 +14,14 @@ class ShoppingList {
         
        
         // Implement this function
+        var fixedList: [String] = []
         
-        
-        
+        for (index, i) in items.enumerated(){
+            fixedList.append("\(index + 1). \(i)(\(amounts[index]))")
+            
+        }
+       
+        return fixedList
     }
     
 }
