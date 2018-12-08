@@ -14,9 +14,12 @@ class ShoppingList {
         
        
         // Implement this function
-        
-        
+        var listOfThings: [String] = []
+        for (index, item) in items.enumerated() {
+            let amount = amounts[index]
+            listOfThings.append("\(index + 1). \(item)(\(amount))")
+        }
+        return listOfThings
         
     }
-    
 }
