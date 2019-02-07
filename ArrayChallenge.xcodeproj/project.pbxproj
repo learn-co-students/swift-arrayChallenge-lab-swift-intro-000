@@ -165,10 +165,12 @@
 				TargetAttributes = {
 					5B9D1C7A1D0B31E500522058 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M4ZK8M3GMN;
 						LastSwiftMigration = 0800;
 					};
 					5B9D1C8E1D0B31E500522058 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = M4ZK8M3GMN;
 						LastSwiftMigration = 0800;
 						TestTargetID = 5B9D1C7A1D0B31E500522058;
 					};
@@ -280,6 +282,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: pmaurelia@hotmail.com (TM297H4SUG)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -325,6 +328,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: pmaurelia@hotmail.com (TM297H4SUG)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -350,9 +354,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M4ZK8M3GMN;
 				INFOPLIST_FILE = ArrayChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.ArrayChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -363,9 +368,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M4ZK8M3GMN;
 				INFOPLIST_FILE = ArrayChallenge/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallenge;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pablo.ArrayChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -375,6 +381,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: pmaurelia@hotmail.com (TM297H4SUG)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: pmaurelia@hotmail.com (TM297H4SUG)";
+				DEVELOPMENT_TEAM = M4ZK8M3GMN;
 				INFOPLIST_FILE = ArrayChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallengeTests;
@@ -388,6 +397,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: pmaurelia@hotmail.com (TM297H4SUG)";
+				DEVELOPMENT_TEAM = M4ZK8M3GMN;
 				INFOPLIST_FILE = ArrayChallengeTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.flatironSchool.ArrayChallengeTests;
