@@ -15,8 +15,13 @@ class ShoppingList {
        
         // Implement this function
         
+        var newArr:[String] = []
         
+        for (index, step) in items.enumerated() {
+            newArr.append("\(index+1). \(step)(\(amounts[index]))")
+        }
         
+        return newArr
     }
     
 }
