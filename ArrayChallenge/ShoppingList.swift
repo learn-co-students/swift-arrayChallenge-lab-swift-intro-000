@@ -9,14 +9,10 @@
 
 class ShoppingList {
     
-    
     func createShoppingList(withItems items: [String], amountOfEachItem amounts: [String]) -> [String] {
-        
-       
-        // Implement this function
-        
-        
-        
+        return items.enumerated()
+            .map({ (i: Int, val: String) -> String in return
+                String(format:"%d. %@(%@)",i+1,val,amounts[i])
+            })
     }
-    
 }
